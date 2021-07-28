@@ -5,7 +5,7 @@ from tinydb import TinyDB
 
 def on_click(x, y, button, pressed):
     if pressed:
-        db = TinyDB(path.join('output','clicks.json'))
+        db = TinyDB(path.join('..', 'output','clicks.json'))
         db.insert({'_x': x, '_y': y})
         print(f'Clicked at ({x}, {y})')
 

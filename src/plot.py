@@ -6,7 +6,7 @@ import numpy as np
 
 
 def _get_points():
-    db_path = path.join('output','clicks.json')
+    db_path = path.join('..', 'output','clicks.json')
     db = TinyDB(db_path)
     return db.all()
 
